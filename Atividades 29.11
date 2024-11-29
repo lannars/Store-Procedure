@@ -1,0 +1,21 @@
+-- atividade 1
+delimiter $$
+create procedure exibir (in cod varchar(15))
+begin
+	select * from turma where codigo_turma = cod;
+end $$
+
+call exibir ('TURMA01');
+
+-- atividade 3
+delimiter $$
+create procedure exibirProf (in cod varchar(15))
+begin
+	select * from professor where codigo_disciplina = codigo_disciplina;
+end $$
+
+-- atividade 2
+delimiter $$
+create procedure exibirMatricula (in cod varchar(15))
+begin
+    select * from matricula where codi
